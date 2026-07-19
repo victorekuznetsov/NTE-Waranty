@@ -1,0 +1,300 @@
+<title>Оборотный фонд гарантийных компонентов NHL — Полюс</title>
+<style>
+:root{
+  --bg:#eef1f4; --surface:#ffffff; --surface-2:#f6f8fa; --line:#d9dee5;
+  --ink:#1b232e; --muted:#5d6b7a; --faint:#8a97a5;
+  --accent:#e08a2b; --accent-ink:#b56a12; --steel:#3e6394;
+  --shadow:0 1px 2px rgba(20,30,45,.06),0 6px 20px rgba(20,30,45,.06);
+  --grid:#e7ebf0; --marker:#e08a2b;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0f141b; --surface:#161d27; --surface-2:#1c2531; --line:#2a3543;
+    --ink:#e7ecf2; --muted:#9aa7b5; --faint:#6b7a8a;
+    --accent:#f0a34a; --accent-ink:#f0a34a; --steel:#6f9bd1;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 22px rgba(0,0,0,.35);
+    --grid:#26313f; --marker:#f0a34a;
+  }
+}
+:root[data-theme="light"]{
+  --bg:#eef1f4; --surface:#ffffff; --surface-2:#f6f8fa; --line:#d9dee5;
+  --ink:#1b232e; --muted:#5d6b7a; --faint:#8a97a5; --accent:#e08a2b; --accent-ink:#b56a12;
+  --steel:#3e6394; --grid:#e7ebf0; --marker:#e08a2b;
+  --shadow:0 1px 2px rgba(20,30,45,.06),0 6px 20px rgba(20,30,45,.06);
+}
+:root[data-theme="dark"]{
+  --bg:#0f141b; --surface:#161d27; --surface-2:#1c2531; --line:#2a3543;
+  --ink:#e7ecf2; --muted:#9aa7b5; --faint:#6b7a8a; --accent:#f0a34a; --accent-ink:#f0a34a;
+  --steel:#6f9bd1; --grid:#26313f; --marker:#f0a34a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 22px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust:100%;line-height:1.45;}
+.wrap{max-width:820px;margin:0 auto;padding:18px 14px 40px;}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);font-weight:700;}
+h1{font-size:22px;line-height:1.15;margin:4px 0 6px;font-weight:800;letter-spacing:-.01em;text-wrap:balance;}
+.sub{color:var(--muted);font-size:13px;margin:0 0 16px;}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px;}
+@media(min-width:560px){.tiles{grid-template-columns:repeat(4,1fr);}}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 12px;box-shadow:var(--shadow);}
+.tile .k{font-size:11px;color:var(--muted);letter-spacing:.02em;}
+.tile .v{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.1;margin-top:3px;}
+.tile .v small{font-size:12px;font-weight:600;color:var(--muted);}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:14px 12px 12px;margin-bottom:16px;}
+.card h2{font-size:15px;margin:0 0 2px;font-weight:800;letter-spacing:-.01em;}
+.card .hint{font-size:12px;color:var(--muted);margin:0 0 12px;}
+.controls{display:flex;flex-direction:column;gap:9px;margin-bottom:6px;}
+.ctl-label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:-2px;}
+.chips{display:flex;flex-wrap:wrap;gap:7px;}
+.chip{appearance:none;border:1px solid var(--line);background:var(--surface-2);color:var(--muted);
+  font:inherit;font-size:12.5px;font-weight:600;padding:8px 12px;border-radius:999px;cursor:pointer;
+  min-height:36px;transition:background .12s,color .12s,border-color .12s;}
+.chip[aria-pressed="true"]{background:var(--steel);border-color:var(--steel);color:#fff;}
+:root[data-theme="dark"] .chip[aria-pressed="true"]{color:#0f141b;}
+.chip.cmp[aria-pressed="true"]{background:var(--sw,#888);border-color:var(--sw,#888);color:#fff;}
+.chip .sw{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:middle;background:var(--sw);}
+.chartbox{position:relative;width:100%;margin-top:8px;}
+svg.chart{width:100%;height:270px;display:block;touch-action:pan-y;}
+.legend{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:8px;padding-top:10px;border-top:1px solid var(--line);}
+.legend span{font-size:12px;color:var(--muted);display:inline-flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums;}
+.legend i{width:14px;height:3px;border-radius:2px;display:inline-block;}
+.tip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--line);
+  border-radius:9px;box-shadow:var(--shadow);padding:8px 10px;font-size:12px;min-width:120px;opacity:0;
+  transform:translate(-50%,0);transition:opacity .08s;z-index:5;}
+.tip .m{font-weight:700;margin-bottom:5px;font-size:12px;}
+.tip .row{display:flex;justify-content:space-between;gap:12px;font-variant-numeric:tabular-nums;}
+.tip .row i{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:5px;}
+.tip .row .nm{color:var(--muted);}
+.note{font-size:12px;color:var(--muted);background:var(--surface-2);border:1px solid var(--line);
+  border-radius:12px;padding:12px 13px;line-height:1.55;}
+.note b{color:var(--ink);}
+.foot{font-size:11px;color:var(--faint);text-align:center;margin-top:18px;}
+.seg{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:3px;flex-wrap:wrap;gap:3px;}
+.seg button{appearance:none;border:0;background:transparent;color:var(--muted);font:inherit;font-size:12.5px;
+  font-weight:600;padding:7px 11px;border-radius:8px;cursor:pointer;min-height:34px;}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow);}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">Полюс · Парк карьерных самосвалов NHL</div>
+  <h1>Оборотный фонд гарантийных компонентов</h1>
+  <p class="sub">Машины на гарантии и требуемые оборотные компоненты по месяцам. Данные о парке и датах ввода — из SAP; даты окончания гарантии рассчитаны по сроку (NTE — 12/24 мес., TR100 — 24 мес.).</p>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="card">
+    <h2>Машины на гарантии</h2>
+    <p class="hint">Выберите площадку — линии показывают модели (и итог). Ведите пальцем по графику, чтобы увидеть значения на месяц.</p>
+    <div class="controls">
+      <div>
+        <div class="ctl-label">Площадка</div>
+        <div class="seg" id="segM"></div>
+      </div>
+    </div>
+    <div class="chartbox">
+      <svg class="chart" id="chartM"></svg>
+      <div class="tip" id="tipM"></div>
+    </div>
+    <div class="legend" id="legM"></div>
+  </div>
+
+  <div class="card">
+    <h2>Потребность в оборотных компонентах</h2>
+    <p class="hint">Выберите площадку и отметьте нужные компоненты. Значения — требуемый оборотный запас, шт (округление комплектов вверх по площадке).</p>
+    <div class="controls">
+      <div>
+        <div class="ctl-label">Площадка</div>
+        <div class="seg" id="segC"></div>
+      </div>
+      <div>
+        <div class="ctl-label">Компоненты — фильтр</div>
+        <div class="chips" id="chipsC"></div>
+      </div>
+    </div>
+    <div class="chartbox">
+      <svg class="chart" id="chartC"></svg>
+      <div class="tip" id="tipC"></div>
+    </div>
+    <div class="legend" id="legC"></div>
+  </div>
+
+  <div class="note">
+    <b>Норматив оборотного фонда</b> — 10 самосвалов на гарантии = 1 комплект.
+    <b>NTE</b> (электромеханический привод): 1&nbsp;ДВС + 2&nbsp;мотор-колеса + 1&nbsp;силовой генератор.
+    <b>TR100</b> (механический привод): 1&nbsp;ДВС + 1&nbsp;КПП + 2&nbsp;бортовых редуктора.
+    Комплекты считаются отдельно по каждой площадке и округляются вверх. Вертикальная пунктирная линия — текущий месяц.
+  </div>
+  <div class="foot">Снимок данных из модели «Расчёт оборотных компонентов NTE». Парк: 336 машин (SAP).</div>
+</div>
+
+<script>
+const DATA = {"months": ["2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10", "2026-11", "2026-12", "2027-01", "2027-02", "2027-03", "2027-04", "2027-05", "2027-06", "2027-07", "2027-08", "2027-09", "2027-10", "2027-11", "2027-12", "2028-01", "2028-02", "2028-03", "2028-04", "2028-05", "2028-06", "2028-07", "2028-08", "2028-09", "2028-10", "2028-11", "2028-12", "2029-01", "2029-02", "2029-03", "2029-04", "2029-05", "2029-06", "2029-07", "2029-08", "2029-09", "2029-10", "2029-11", "2029-12", "2030-01", "2030-02", "2030-03", "2030-04", "2030-05", "2030-06", "2030-07", "2030-08", "2030-09", "2030-10", "2030-11", "2030-12", "2031-01", "2031-02", "2031-03", "2031-04", "2031-05", "2031-06"], "machines": {"Красноярск|NTE240": [2, 7, 12, 17, 22, 24, 26, 30, 32, 32, 36, 40, 43, 45, 42, 41, 40, 39, 42, 44, 45, 43, 43, 39, 41, 46, 48, 51, 53, 51, 47, 42, 38, 43, 49, 51, 51, 51, 51, 51, 51, 51, 51, 51, 51, 47, 47, 47, 47, 41, 33, 27, 22, 16, 14, 14, 14, 14, 8, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Красноярск|TR100": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 8, 10, 12, 14, 14, 14, 14, 14, 16, 18, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 18, 18, 18, 18, 14, 12, 10, 8, 8, 8, 8, 8, 6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Сухой Лог|NTE240": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 6, 9, 9, 9, 9, 9, 13, 17, 21, 24, 28, 32, 36, 40, 44, 47, 50, 53, 57, 61, 65, 68, 69, 70, 71, 72, 73, 76, 76, 76, 76, 72, 68, 64, 61, 57, 53, 49, 45, 41, 38, 35, 32, 28, 24, 20, 17, 16, 15, 11, 7, 3, 0, 0, 0, 0, 0], "Сухой Лог|TR100": [0, 0, 0, 2, 2, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 7, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Магадан|NTE200": [6, 11, 16, 20, 20, 20, 20, 20, 20, 20, 22, 28, 34, 30, 25, 20, 16, 16, 16, 16, 19, 20, 27, 25, 19, 13, 11, 11, 11, 11, 11, 11, 11, 11, 11, 15, 18, 18, 18, 18, 18, 18, 19, 19, 19, 16, 15, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 4, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Магадан|TR100": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 3, 3, 3, 3, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 5, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Алдан|TR100": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 8, 13, 13, 13, 16, 16, 17, 17, 17, 17, 19, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 24, 28, 28, 25, 23, 23, 23, 20, 20, 19, 19, 19, 19, 17, 14, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 11, 7, 7, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "ВСЕГО": [9, 19, 29, 40, 45, 54, 56, 60, 62, 62, 68, 78, 87, 92, 89, 83, 78, 80, 83, 90, 94, 93, 100, 100, 101, 104, 107, 110, 110, 108, 97, 97, 102, 114, 120, 128, 135, 135, 136, 138, 142, 145, 147, 151, 150, 147, 150, 146, 143, 135, 126, 121, 120, 117, 116, 117, 116, 111, 102, 99, 91, 84, 84, 76, 69, 65, 62, 57, 53, 49, 45, 41, 38, 35, 32, 28, 24, 20, 17, 16, 15, 11, 7, 3, 0, 0, 0, 0, 0]}, "components": {"Красноярск|NTE240|ДВС": [1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 4, 4, 5, 5, 5, 5, 5, 4, 5, 5, 5, 6, 6, 6, 5, 5, 4, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 5, 5, 5, 5, 5, 4, 3, 3, 2, 2, 2, 2, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Красноярск|NTE240|Мотор-колесо": [2, 2, 4, 4, 6, 6, 6, 6, 8, 8, 8, 8, 10, 10, 10, 10, 8, 8, 10, 10, 10, 10, 10, 8, 10, 10, 10, 12, 12, 12, 10, 10, 8, 10, 10, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 10, 10, 10, 10, 10, 8, 6, 6, 4, 4, 4, 4, 4, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Красноярск|NTE240|Силовой генератор": [1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 4, 4, 5, 5, 5, 5, 5, 4, 5, 5, 5, 6, 6, 6, 5, 5, 4, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 5, 5, 5, 5, 5, 4, 3, 3, 2, 2, 2, 2, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Красноярск|TR100|ДВС": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Красноярск|TR100|КПП": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Красноярск|TR100|Бортовой редуктор": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Сухой Лог|NTE240|ДВС": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 7, 7, 7, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 2, 2, 2, 2, 2, 1, 1, 0, 0, 0, 0, 0], "Сухой Лог|NTE240|Мотор-колесо": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 4, 4, 6, 6, 6, 8, 8, 8, 10, 10, 10, 12, 12, 14, 14, 14, 14, 14, 16, 16, 16, 16, 16, 16, 16, 16, 14, 14, 14, 12, 12, 10, 10, 10, 8, 8, 8, 6, 6, 4, 4, 4, 4, 4, 2, 2, 0, 0, 0, 0, 0], "Сухой Лог|NTE240|Силовой генератор": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 7, 7, 7, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 2, 2, 2, 2, 2, 1, 1, 0, 0, 0, 0, 0], "Сухой Лог|TR100|ДВС": [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Сухой Лог|TR100|КПП": [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Сухой Лог|TR100|Бортовой редуктор": [0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Магадан|NTE200|ДВС": [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 4, 3, 3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Магадан|NTE200|Мотор-колесо": [2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6, 8, 6, 6, 4, 4, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Магадан|NTE200|Силовой генератор": [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 4, 3, 3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Магадан|TR100|ДВС": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Магадан|TR100|КПП": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Магадан|TR100|Бортовой редуктор": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Алдан|TR100|ДВС": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Алдан|TR100|КПП": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Алдан|TR100|Бортовой редуктор": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, "combos": [{"site": "Красноярск", "group": "NTE", "model": "NTE240"}, {"site": "Красноярск", "group": "TR100", "model": "TR100"}, {"site": "Сухой Лог", "group": "NTE", "model": "NTE240"}, {"site": "Сухой Лог", "group": "TR100", "model": "TR100"}, {"site": "Магадан", "group": "NTE", "model": "NTE200"}, {"site": "Магадан", "group": "TR100", "model": "TR100"}, {"site": "Алдан", "group": "TR100", "model": "TR100"}], "meta": {"total": 336, "planned": 167, "bySite": {"Алдан|TR100": 36, "Красноярск|NTE240": 122, "Красноярск|TR100": 22, "Магадан|NTE200": 55, "Магадан|TR100": 7, "Сухой Лог|NTE240": 85, "Сухой Лог|TR100": 9}}};
+const MONTHS = DATA.months;
+const N = MONTHS.length;
+const SITES = ["Красноярск","Сухой Лог","Магадан","Алдан"];
+const SITE_COLOR = {"Красноярск":"#4E79A7","Сухой Лог":"#E1873C","Магадан":"#59A14F","Алдан":"#B07AA1"};
+const TOTAL_COLOR = "#c65a11";
+const MODEL_COLOR = {"NTE240":"#4E79A7","NTE200":"#59A14F","TR100":"#E1873C"};
+const CUR = (()=>{const i=MONTHS.indexOf("2026-07");return i<0?N-1:i;})();
+
+const COMP_OPTS = [
+ {id:"NTE_DVS",  label:"ДВС · эл.",        group:"NTE",   comp:"ДВС",               color:"#C44E52"},
+ {id:"NTE_MK",   label:"Мотор-колесо",     group:"NTE",   comp:"Мотор-колесо",       color:"#4E79A7"},
+ {id:"NTE_GEN",  label:"Силовой генератор",group:"NTE",   comp:"Силовой генератор",  color:"#59A14F"},
+ {id:"TR_DVS",   label:"ДВС · мех.",       group:"TR100", comp:"ДВС",               color:"#E1873C"},
+ {id:"TR_KPP",   label:"КПП",              group:"TR100", comp:"КПП",               color:"#8C6D31"},
+ {id:"TR_BR",    label:"Бортовой редуктор",group:"TR100", comp:"Бортовой редуктор", color:"#B07AA1"},
+];
+function groupOf(model){return model==="TR100"?"TR100":"NTE";}
+
+// site -> unique models
+const siteModels={};
+DATA.combos.forEach(c=>{const s=c.site;(siteModels[s]=siteModels[s]||[]);if(!siteModels[s].includes(c.model))siteModels[s].push(c.model);});
+
+function siteTotal(site){const o=new Array(N).fill(0);
+  (siteModels[site]||[]).forEach(m=>{const s=DATA.machines[site+"|"+m];if(s)for(let i=0;i<N;i++)o[i]+=s[i];});return o;}
+
+function machineSeries(scope){
+  if(scope==="Все"){
+    const arr=SITES.filter(s=>siteModels[s]).map(s=>({name:s,color:SITE_COLOR[s],values:siteTotal(s)}));
+    arr.push({name:"ВСЕГО",color:TOTAL_COLOR,values:DATA.machines["ВСЕГО"],bold:true});
+    return arr;
+  }
+  const arr=(siteModels[scope]||[]).map(m=>({name:m,color:MODEL_COLOR[m]||"#888",values:DATA.machines[scope+"|"+m]}));
+  if(arr.length>1) arr.push({name:"Всего",color:TOTAL_COLOR,values:siteTotal(scope),bold:true});
+  return arr;
+}
+function compSeriesFor(scope,opt){
+  const o=new Array(N).fill(0);
+  DATA.combos.forEach(c=>{
+    if(groupOf(c.model)!==opt.group)return;
+    if(scope!=="Все"&&c.site!==scope)return;
+    const s=DATA.components[c.site+"|"+c.model+"|"+opt.comp];
+    if(s)for(let i=0;i<N;i++)o[i]+=s[i];
+  });
+  return o;
+}
+function componentSeries(scope,activeIds){
+  return COMP_OPTS.filter(o=>activeIds.has(o.id))
+    .map(o=>({name:o.label,color:o.color,values:compSeriesFor(scope,o)}))
+    .filter(s=>s.values.some(v=>v>0)||true);
+}
+
+function niceMax(v){if(v<=5)return 5;const p=Math.pow(10,Math.floor(Math.log10(v)));const n=v/p;
+  let m=n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10;return Math.ceil(v/(m*p/ (m>=5?1:2)))*(m*p/(m>=5?1:2));}
+function fmtMonth(s){const[a,b]=s.split("-");const nm=["","янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"];return nm[+b]+" "+a;}
+
+function drawChart(svg,tip,series,valueLabel){
+  const box=svg.getBoundingClientRect();
+  const W=Math.max(280,box.width||svg.clientWidth||320), H=270;
+  const padL=30,padR=10,padT=12,padB=24;
+  const plotW=W-padL-padR, plotH=H-padT-padB;
+  let mx=0; series.forEach(s=>s.values.forEach(v=>{if(v>mx)mx=v;}));
+  const maxY=niceMax(mx||1);
+  const x=i=>padL+(N<=1?0:i/(N-1)*plotW);
+  const y=v=>padT+plotH-(v/maxY)*plotH;
+  const NS="http://www.w3.org/2000/svg";
+  let el=`<rect x="0" y="0" width="${W}" height="${H}" fill="none"/>`;
+  // gridlines
+  const steps=4;
+  for(let g=0;g<=steps;g++){const val=maxY*g/steps;const yy=y(val);
+    el+=`<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W-padR}" y2="${yy.toFixed(1)}" stroke="var(--grid)" stroke-width="1"/>`;
+    el+=`<text x="${padL-5}" y="${(yy+3).toFixed(1)}" text-anchor="end" font-size="9.5" fill="var(--faint)">${Math.round(val)}</text>`;
+  }
+  // year ticks
+  for(let i=0;i<N;i++){const mm=MONTHS[i].split("-")[1];
+    if(mm==="01"||i===0){const xx=x(i);
+      el+=`<line x1="${xx.toFixed(1)}" y1="${padT}" x2="${xx.toFixed(1)}" y2="${padT+plotH}" stroke="var(--grid)" stroke-width="1"/>`;
+      el+=`<text x="${xx.toFixed(1)}" y="${H-8}" text-anchor="middle" font-size="9.5" fill="var(--faint)">${MONTHS[i].split("-")[0]}</text>`;
+    }}
+  // current-month marker
+  const cx=x(CUR);
+  el+=`<line x1="${cx.toFixed(1)}" y1="${padT}" x2="${cx.toFixed(1)}" y2="${padT+plotH}" stroke="var(--marker)" stroke-width="1.3" stroke-dasharray="4 3"/>`;
+  el+=`<text x="${cx.toFixed(1)}" y="${padT-3}" text-anchor="middle" font-size="9" fill="var(--marker)" font-weight="700">сейчас</text>`;
+  // lines
+  series.forEach(s=>{
+    let d="";for(let i=0;i<N;i++){d+=(i?"L":"M")+x(i).toFixed(1)+" "+y(s.values[i]).toFixed(1)+" ";}
+    el+=`<path d="${d}" fill="none" stroke="${s.color}" stroke-width="${s.bold?2.6:1.7}" stroke-linejoin="round" stroke-linecap="round" ${s.bold?'':'opacity="0.95"'}/>`;
+    const ei=CUR;el+=`<circle cx="${x(ei).toFixed(1)}" cy="${y(s.values[ei]).toFixed(1)}" r="${s.bold?3.4:2.8}" fill="${s.color}"/>`;
+  });
+  // cursor group placeholder
+  el+=`<g id="cursor" style="display:none"><line stroke="var(--muted)" stroke-width="1" stroke-dasharray="2 2"/></g>`;
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  svg.innerHTML=el;
+  // interactivity
+  const cursor=svg.querySelector("#cursor");const cline=cursor.querySelector("line");
+  const dots=[];
+  function move(clientX){
+    const r=svg.getBoundingClientRect();
+    const px=(clientX-r.left)*(W/r.width);
+    let i=Math.round((px-padL)/(plotW)*(N-1));i=Math.max(0,Math.min(N-1,i));
+    const xx=x(i);
+    cursor.style.display="";cline.setAttribute("x1",xx);cline.setAttribute("x2",xx);cline.setAttribute("y1",padT);cline.setAttribute("y2",padT+plotH);
+    dots.forEach(d=>d.remove());dots.length=0;
+    series.forEach(s=>{const c=document.createElementNS(NS,"circle");
+      c.setAttribute("cx",xx);c.setAttribute("cy",y(s.values[i]));c.setAttribute("r",3.2);c.setAttribute("fill",s.color);
+      c.setAttribute("stroke","var(--surface)");c.setAttribute("stroke-width","1.2");svg.appendChild(c);dots.push(c);});
+    let rows=series.map(s=>`<div class="row"><span class="nm"><i style="background:${s.color}"></i>${s.name}</span><b>${s.values[i]}</b></div>`).join("");
+    tip.innerHTML=`<div class="m">${fmtMonth(MONTHS[i])}</div>${rows}`;
+    tip.style.opacity="1";
+    const bx=svg.getBoundingClientRect();
+    let left=(xx/W)*bx.width;left=Math.max(64,Math.min(bx.width-64,left));
+    tip.style.left=left+"px";tip.style.top="4px";
+  }
+  function end(){cursor.style.display="none";dots.forEach(d=>d.remove());dots.length=0;tip.style.opacity="0";}
+  svg.onpointermove=e=>{move(e.clientX);};
+  svg.onpointerdown=e=>{move(e.clientX);};
+  svg.onpointerleave=end;
+  return series;
+}
+
+// ---- state & UI ----
+const stateM={scope:"Все"};
+const stateC={scope:"Все",active:new Set(COMP_OPTS.map(o=>o.id))};
+
+function buildLegend(el,series){el.innerHTML=series.map(s=>{const pk=Math.max(...s.values);
+  return `<span><i style="background:${s.color}"></i>${s.name}<b style="color:var(--ink);margin-left:2px">· пик ${pk}</b></span>`;}).join("");}
+
+function renderM(){const s=machineSeries(stateM.scope);
+  drawChart(document.getElementById("chartM"),document.getElementById("tipM"),s);
+  buildLegend(document.getElementById("legM"),s);currentM=s;}
+function renderC(){const s=componentSeries(stateC.scope,stateC.active);
+  const svg=document.getElementById("chartC");
+  if(s.length===0){svg.innerHTML=`<text x="50%" y="50%" text-anchor="middle" fill="var(--faint)" font-size="12">Выберите хотя бы один компонент</text>`;svg.setAttribute("viewBox","0 0 300 270");document.getElementById("legC").innerHTML="";currentC=[];return;}
+  drawChart(svg,document.getElementById("tipC"),s);
+  buildLegend(document.getElementById("legC"),s);currentC=s;}
+let currentM=[],currentC=[];
+
+// segmented controls
+function seg(elId,scopes,state,render){const el=document.getElementById(elId);
+  el.innerHTML=scopes.map(s=>`<button data-s="${s}" aria-pressed="${s===state.scope}">${s}</button>`).join("");
+  el.querySelectorAll("button").forEach(b=>b.onclick=()=>{state.scope=b.dataset.s;
+    el.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.s===state.scope));render();});}
+seg("segM",["Все",...SITES.filter(s=>siteModels[s])],stateM,renderM);
+seg("segC",["Все",...SITES.filter(s=>siteModels[s])],stateC,renderC);
+
+// component chips
+const chipsC=document.getElementById("chipsC");
+chipsC.innerHTML=COMP_OPTS.map(o=>`<button class="chip cmp" data-id="${o.id}" aria-pressed="true" style="--sw:${o.color}"><span class="sw"></span>${o.label}</button>`).join("");
+chipsC.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{const id=b.dataset.id;
+  if(stateC.active.has(id))stateC.active.delete(id);else stateC.active.add(id);
+  b.setAttribute("aria-pressed",stateC.active.has(id));renderC();});
+
+// tiles
+(function(){const m=DATA.meta;const cur=DATA.machines["ВСЕГО"][CUR];const peak=Math.max(...DATA.machines["ВСЕГО"]);
+  const pIdx=DATA.machines["ВСЕГО"].indexOf(peak);
+  const tiles=[
+    {k:"Парк всего, машин",v:m.total,s:"NTE + TR100"},
+    {k:"На гарантии сейчас",v:cur,s:fmtMonth(MONTHS[CUR])},
+    {k:"Пик на гарантии",v:peak,s:fmtMonth(MONTHS[pIdx])},
+    {k:"Плановые вводы",v:m.planned,s:"без серийного №"},
+  ];
+  document.getElementById("tiles").innerHTML=tiles.map(t=>`<div class="tile"><div class="k">${t.k}</div><div class="v">${t.v} <small>${t.s}</small></div></div>`).join("");
+})();
+
+renderM();renderC();
+let rt;window.addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(()=>{renderM();renderC();},150);});
+</script>

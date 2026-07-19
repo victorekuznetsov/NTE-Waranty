@@ -1,0 +1,429 @@
+{
+  "nodes": [
+    {
+      "id": "c1f684b4fa1a16aa",
+      "type": "text",
+      "x": -1360,
+      "y": -680,
+      "width": 1300,
+      "height": 80,
+      "styleAttributes": {},
+      "text": "СХЕМА · Ремонт компонентов через контрагента ГЕ (GE-NHL) с использованием оборотных фондов (ОФ)\nОФ ГЕ — фонд контрагента, покрывает ТОЛЬКО гарантийные случаи   ·   ОФ Полюс (ЗИП) — фонд владельца парка, любые случаи"
+    },
+    {
+      "id": "1fca9e94c9f18071",
+      "type": "group",
+      "x": -1380,
+      "y": -200,
+      "width": 340,
+      "height": 260,
+      "styleAttributes": {},
+      "label": "СОБЫТИЕ"
+    },
+    {
+      "id": "101ef1eafe1d18b5",
+      "type": "group",
+      "x": -1000,
+      "y": -160,
+      "width": 300,
+      "height": 200,
+      "styleAttributes": {},
+      "label": "РЕШЕНИЕ"
+    },
+    {
+      "id": "605ed5f9147fd96b",
+      "type": "group",
+      "x": -640,
+      "y": -420,
+      "width": 1080,
+      "height": 240,
+      "styleAttributes": {},
+      "label": "ГАРАНТИЙНЫЙ СЛУЧАЙ → ОФ ГЕ"
+    },
+    {
+      "id": "bb1ee44b07dc871a",
+      "type": "group",
+      "x": -640,
+      "y": 220,
+      "width": 1080,
+      "height": 240,
+      "styleAttributes": {},
+      "label": "НЕ ГАРАНТИЙНЫЙ СЛУЧАЙ → ОФ ПОЛЮС"
+    },
+    {
+      "id": "a55ec3aa3109a0e2",
+      "type": "group",
+      "x": 880,
+      "y": -420,
+      "width": 380,
+      "height": 240,
+      "styleAttributes": {},
+      "label": "ПОПОЛНЕНИЕ ОФ ГЕ"
+    },
+    {
+      "id": "dd052113f2160dc2",
+      "type": "group",
+      "x": 880,
+      "y": 220,
+      "width": 380,
+      "height": 240,
+      "styleAttributes": {},
+      "label": "ПОПОЛНЕНИЕ ОФ ПОЛЮС"
+    },
+    {
+      "id": "06bf79d56b0bf608",
+      "type": "text",
+      "x": -1360,
+      "y": -140,
+      "width": 300,
+      "height": 170,
+      "styleAttributes": {},
+      "text": "🚛 Самосвал NHL\n\nНеисправность компонента:\nДВС · мотор-колесо · силовой генератор ·\nКПП · бортовой редуктор"
+    },
+    {
+      "id": "fe2c3174e409df11",
+      "type": "text",
+      "x": -980,
+      "y": -90,
+      "width": 260,
+      "height": 120,
+      "styleAttributes": {
+        "shape": "diamond"
+      },
+      "text": "Определение\nгарантийного\nслучая",
+      "color": "3"
+    },
+    {
+      "id": "aa2d510f303ce489",
+      "type": "text",
+      "x": -620,
+      "y": -710,
+      "width": 320,
+      "height": 100,
+      "styleAttributes": {},
+      "text": "🟢 ОФ ГЕ\nоборотный фонд контрагента ГЕ\n(только гарантийные случаи)",
+      "color": "4"
+    },
+    {
+      "id": "389a0b28cf41959a",
+      "type": "text",
+      "x": -620,
+      "y": 590,
+      "width": 320,
+      "height": 100,
+      "styleAttributes": {},
+      "text": "🟠 ОФ Полюс (ЗИП)\nоборотный фонд владельца парка\n(любые случаи)",
+      "color": "2"
+    },
+    {
+      "id": "042f56ef92c8a4f6",
+      "type": "text",
+      "x": -620,
+      "y": -380,
+      "width": 300,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "1 · Вовлечение ОФ ГЕ\nНа машину ставится исправный\nкомпонент из фонда ГЕ",
+      "color": "4"
+    },
+    {
+      "id": "b47571b5006b2e5f",
+      "type": "text",
+      "x": -240,
+      "y": -380,
+      "width": 300,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "2 · Установка на машину\nСамосвал возвращается в работу",
+      "color": "4"
+    },
+    {
+      "id": "03a900d22389114a",
+      "type": "text",
+      "x": 140,
+      "y": -380,
+      "width": 300,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "3 · Снятый (неисправный) компонент →\nРемонт по гарантии\n(за счёт ГЕ)",
+      "color": "4"
+    },
+    {
+      "id": "da50efd3e262a150",
+      "type": "text",
+      "x": 140,
+      "y": -570,
+      "width": 300,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "3а · Ремонт невозможен →\nзамена компонента за счёт ГЕ",
+      "color": "1"
+    },
+    {
+      "id": "f6f29308e362f401",
+      "type": "text",
+      "x": 900,
+      "y": -380,
+      "width": 340,
+      "height": 140,
+      "styleAttributes": {},
+      "text": "4 · Пополнение ОФ ГЕ\nОтремонтированный / новый компонент\nвозвращается в фонд ГЕ.\nГарантия на компонент — стандартная",
+      "color": "6"
+    },
+    {
+      "id": "eb07e4054158f663",
+      "type": "text",
+      "x": -620,
+      "y": 260,
+      "width": 300,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "1 · Вовлечение ОФ Полюс (ЗИП)\nНа машину ставится исправный\nкомпонент из фонда владельца",
+      "color": "2"
+    },
+    {
+      "id": "9132d966ca480783",
+      "type": "text",
+      "x": -240,
+      "y": 260,
+      "width": 300,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "2 · Установка на машину\nСамосвал возвращается в работу",
+      "color": "2"
+    },
+    {
+      "id": "4ea20bbabfb849b4",
+      "type": "text",
+      "x": 140,
+      "y": 260,
+      "width": 300,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "3 · Снятый компонент →\nРемонт по коммерции\n(оплата Полюс)",
+      "color": "2"
+    },
+    {
+      "id": "3259f581da956c13",
+      "type": "text",
+      "x": 140,
+      "y": 450,
+      "width": 300,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "3а · Ремонт невозможен →\nзакупка нового компонента",
+      "color": "1"
+    },
+    {
+      "id": "c85d98b6b2e5581e",
+      "type": "text",
+      "x": 900,
+      "y": 260,
+      "width": 340,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "4 · Пополнение ОФ Полюс (ЗИП)\nКомпонент возвращается\nв фонд владельца парка",
+      "color": "6"
+    },
+    {
+      "id": "b38ebee6acb2dfdc",
+      "type": "text",
+      "x": 900,
+      "y": 590,
+      "width": 340,
+      "height": 100,
+      "styleAttributes": {},
+      "text": "❓ Открытый вопрос\nЗакупка ОФ при невозможности ремонта:\nу ГЕ или у стороннего поставщика?",
+      "color": "3"
+    },
+    {
+      "id": "19cfcb40a1a526a9",
+      "type": "text",
+      "x": -620,
+      "y": 750,
+      "width": 760,
+      "height": 80,
+      "styleAttributes": {},
+      "text": "❓ Открытый вопрос · Первичное формирование фондов: кто и в каком объёме закупает ОФ ГЕ и ОФ Полюс (ЗИП) при старте эксплуатации парка",
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e624f51149b08dc1",
+      "styleAttributes": {},
+      "fromNode": "06bf79d56b0bf608",
+      "fromSide": "right",
+      "toNode": "fe2c3174e409df11",
+      "toSide": "left",
+      "toFloating": false
+    },
+    {
+      "id": "a74a1b302b049707",
+      "styleAttributes": {},
+      "fromNode": "fe2c3174e409df11",
+      "fromSide": "top",
+      "toNode": "042f56ef92c8a4f6",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "гарантийный"
+    },
+    {
+      "id": "eb0e1108b6060175",
+      "styleAttributes": {},
+      "fromNode": "fe2c3174e409df11",
+      "fromSide": "bottom",
+      "toNode": "eb07e4054158f663",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "не гарантийный"
+    },
+    {
+      "id": "f0c15624a3326fe2",
+      "styleAttributes": {},
+      "fromNode": "aa2d510f303ce489",
+      "fromSide": "bottom",
+      "toNode": "042f56ef92c8a4f6",
+      "toSide": "top",
+      "toFloating": false,
+      "label": "выдача"
+    },
+    {
+      "id": "cbe904fe646fdec9",
+      "styleAttributes": {},
+      "fromNode": "042f56ef92c8a4f6",
+      "fromSide": "right",
+      "toNode": "b47571b5006b2e5f",
+      "toSide": "left",
+      "toFloating": false
+    },
+    {
+      "id": "025023eb612ae9b8",
+      "styleAttributes": {},
+      "fromNode": "b47571b5006b2e5f",
+      "fromSide": "right",
+      "toNode": "03a900d22389114a",
+      "toSide": "left",
+      "toFloating": false
+    },
+    {
+      "id": "c05417566590b16f",
+      "styleAttributes": {},
+      "fromNode": "03a900d22389114a",
+      "fromSide": "right",
+      "toNode": "f6f29308e362f401",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "отремонтирован"
+    },
+    {
+      "id": "79c2c8d7bd8bab55",
+      "styleAttributes": {},
+      "fromNode": "03a900d22389114a",
+      "fromSide": "top",
+      "toNode": "da50efd3e262a150",
+      "toSide": "bottom",
+      "toFloating": false,
+      "label": "не подлежит"
+    },
+    {
+      "id": "8e8a8575f8ba0564",
+      "styleAttributes": {},
+      "fromNode": "da50efd3e262a150",
+      "fromSide": "right",
+      "toNode": "f6f29308e362f401",
+      "toSide": "top",
+      "toFloating": false
+    },
+    {
+      "id": "51a24ea47fa73930",
+      "styleAttributes": {},
+      "fromNode": "f6f29308e362f401",
+      "fromSide": "top",
+      "toNode": "aa2d510f303ce489",
+      "toSide": "right",
+      "toFloating": false,
+      "label": "возврат в фонд"
+    },
+    {
+      "id": "a18751428ebb30d6",
+      "styleAttributes": {},
+      "fromNode": "389a0b28cf41959a",
+      "fromSide": "top",
+      "toNode": "eb07e4054158f663",
+      "toSide": "bottom",
+      "toFloating": false,
+      "label": "выдача"
+    },
+    {
+      "id": "4cbfe0654629d289",
+      "styleAttributes": {},
+      "fromNode": "eb07e4054158f663",
+      "fromSide": "right",
+      "toNode": "9132d966ca480783",
+      "toSide": "left",
+      "toFloating": false
+    },
+    {
+      "id": "063b9d7f76139701",
+      "styleAttributes": {},
+      "fromNode": "9132d966ca480783",
+      "fromSide": "right",
+      "toNode": "4ea20bbabfb849b4",
+      "toSide": "left",
+      "toFloating": false
+    },
+    {
+      "id": "12fae128b051f8f5",
+      "styleAttributes": {},
+      "fromNode": "4ea20bbabfb849b4",
+      "fromSide": "right",
+      "toNode": "c85d98b6b2e5581e",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "отремонтирован"
+    },
+    {
+      "id": "814367080cf36f1a",
+      "styleAttributes": {},
+      "fromNode": "4ea20bbabfb849b4",
+      "fromSide": "bottom",
+      "toNode": "3259f581da956c13",
+      "toSide": "top",
+      "toFloating": false,
+      "label": "не подлежит"
+    },
+    {
+      "id": "66aa83810b95094e",
+      "styleAttributes": {},
+      "fromNode": "3259f581da956c13",
+      "fromSide": "right",
+      "toNode": "c85d98b6b2e5581e",
+      "toSide": "bottom",
+      "toFloating": false
+    },
+    {
+      "id": "7ea5dc5831bb492a",
+      "styleAttributes": {},
+      "fromNode": "c85d98b6b2e5581e",
+      "fromSide": "bottom",
+      "toNode": "389a0b28cf41959a",
+      "toSide": "right",
+      "toFloating": false,
+      "label": "возврат в фонд"
+    },
+    {
+      "id": "3291df883d49421b",
+      "styleAttributes": {},
+      "fromNode": "3259f581da956c13",
+      "fromSide": "right",
+      "toNode": "b38ebee6acb2dfdc",
+      "toSide": "left",
+      "toFloating": false
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

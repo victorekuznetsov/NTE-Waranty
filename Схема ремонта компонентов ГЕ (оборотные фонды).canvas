@@ -1,17 +1,17 @@
 {
   "nodes": [
     {
-      "id": "c1f684b4fa1a16aa",
+      "id": "331298d2cf4d735e",
       "type": "text",
       "x": -1360,
-      "y": -680,
+      "y": -840,
       "width": 1300,
       "height": 80,
       "styleAttributes": {},
       "text": "СХЕМА · Ремонт компонентов через контрагента ГЕ (GE-NHL) с использованием оборотных фондов (ОФ)\nОФ ГЕ — фонд контрагента, покрывает ТОЛЬКО гарантийные случаи   ·   ОФ Полюс (ЗИП) — фонд владельца парка, любые случаи"
     },
     {
-      "id": "1fca9e94c9f18071",
+      "id": "4656ac6f8b347c19",
       "type": "group",
       "x": -1380,
       "y": -200,
@@ -21,7 +21,7 @@
       "label": "СОБЫТИЕ"
     },
     {
-      "id": "101ef1eafe1d18b5",
+      "id": "eb747c8f650b32f0",
       "type": "group",
       "x": -1000,
       "y": -160,
@@ -31,7 +31,7 @@
       "label": "РЕШЕНИЕ"
     },
     {
-      "id": "605ed5f9147fd96b",
+      "id": "10e2ba6169464c78",
       "type": "group",
       "x": -640,
       "y": -420,
@@ -41,7 +41,7 @@
       "label": "ГАРАНТИЙНЫЙ СЛУЧАЙ → ОФ ГЕ"
     },
     {
-      "id": "bb1ee44b07dc871a",
+      "id": "ae7f6fe421e0992e",
       "type": "group",
       "x": -640,
       "y": 220,
@@ -51,7 +51,7 @@
       "label": "НЕ ГАРАНТИЙНЫЙ СЛУЧАЙ → ОФ ПОЛЮС"
     },
     {
-      "id": "a55ec3aa3109a0e2",
+      "id": "804f8b5b313e90d4",
       "type": "group",
       "x": 880,
       "y": -420,
@@ -61,7 +61,7 @@
       "label": "ПОПОЛНЕНИЕ ОФ ГЕ"
     },
     {
-      "id": "dd052113f2160dc2",
+      "id": "45179eac10ffb028",
       "type": "group",
       "x": 880,
       "y": 220,
@@ -71,7 +71,7 @@
       "label": "ПОПОЛНЕНИЕ ОФ ПОЛЮС"
     },
     {
-      "id": "06bf79d56b0bf608",
+      "id": "67cb80a6a2765a56",
       "type": "text",
       "x": -1360,
       "y": -140,
@@ -81,7 +81,7 @@
       "text": "🚛 Самосвал NHL\n\nНеисправность компонента:\nДВС · мотор-колесо · силовой генератор ·\nКПП · бортовой редуктор"
     },
     {
-      "id": "fe2c3174e409df11",
+      "id": "71e1b138ab978a7b",
       "type": "text",
       "x": -980,
       "y": -90,
@@ -94,10 +94,10 @@
       "color": "3"
     },
     {
-      "id": "aa2d510f303ce489",
+      "id": "75449856a55aeb42",
       "type": "text",
       "x": -620,
-      "y": -710,
+      "y": -560,
       "width": 320,
       "height": 100,
       "styleAttributes": {},
@@ -105,7 +105,7 @@
       "color": "4"
     },
     {
-      "id": "389a0b28cf41959a",
+      "id": "1542ce4fc20ee5ac",
       "type": "text",
       "x": -620,
       "y": 590,
@@ -116,7 +116,7 @@
       "color": "2"
     },
     {
-      "id": "042f56ef92c8a4f6",
+      "id": "ebd94724ec1d84c0",
       "type": "text",
       "x": -620,
       "y": -380,
@@ -127,7 +127,7 @@
       "color": "4"
     },
     {
-      "id": "b47571b5006b2e5f",
+      "id": "b14c88e5ce135fef",
       "type": "text",
       "x": -240,
       "y": -380,
@@ -138,7 +138,7 @@
       "color": "4"
     },
     {
-      "id": "03a900d22389114a",
+      "id": "f9c90be0743c95ce",
       "type": "text",
       "x": 140,
       "y": -380,
@@ -149,7 +149,7 @@
       "color": "4"
     },
     {
-      "id": "da50efd3e262a150",
+      "id": "a9dab8ce75087337",
       "type": "text",
       "x": 140,
       "y": -570,
@@ -160,7 +160,7 @@
       "color": "1"
     },
     {
-      "id": "f6f29308e362f401",
+      "id": "37bedf5633c6efcc",
       "type": "text",
       "x": 900,
       "y": -380,
@@ -171,7 +171,7 @@
       "color": "6"
     },
     {
-      "id": "eb07e4054158f663",
+      "id": "d5e658ce65a3a43c",
       "type": "text",
       "x": -620,
       "y": 260,
@@ -182,7 +182,7 @@
       "color": "2"
     },
     {
-      "id": "9132d966ca480783",
+      "id": "5330c1adbd32ddb0",
       "type": "text",
       "x": -240,
       "y": 260,
@@ -193,7 +193,7 @@
       "color": "2"
     },
     {
-      "id": "4ea20bbabfb849b4",
+      "id": "0cc731df626dff56",
       "type": "text",
       "x": 140,
       "y": 260,
@@ -204,7 +204,7 @@
       "color": "2"
     },
     {
-      "id": "3259f581da956c13",
+      "id": "7fae980ff367a65c",
       "type": "text",
       "x": 140,
       "y": 450,
@@ -215,7 +215,7 @@
       "color": "1"
     },
     {
-      "id": "c85d98b6b2e5581e",
+      "id": "ef5cd0cd4b614cea",
       "type": "text",
       "x": 900,
       "y": 260,
@@ -226,7 +226,7 @@
       "color": "6"
     },
     {
-      "id": "b38ebee6acb2dfdc",
+      "id": "dbad40b581c75fdc",
       "type": "text",
       "x": 900,
       "y": 590,
@@ -237,7 +237,7 @@
       "color": "3"
     },
     {
-      "id": "19cfcb40a1a526a9",
+      "id": "7845f825ea047cc3",
       "type": "text",
       "x": -620,
       "y": 750,
@@ -250,174 +250,174 @@
   ],
   "edges": [
     {
-      "id": "e624f51149b08dc1",
+      "id": "8fc38add334f1987",
       "styleAttributes": {},
-      "fromNode": "06bf79d56b0bf608",
+      "fromNode": "67cb80a6a2765a56",
       "fromSide": "right",
-      "toNode": "fe2c3174e409df11",
+      "toNode": "71e1b138ab978a7b",
       "toSide": "left",
       "toFloating": false
     },
     {
-      "id": "a74a1b302b049707",
+      "id": "2bd0d3110d36f395",
       "styleAttributes": {},
-      "fromNode": "fe2c3174e409df11",
+      "fromNode": "71e1b138ab978a7b",
       "fromSide": "top",
-      "toNode": "042f56ef92c8a4f6",
+      "toNode": "ebd94724ec1d84c0",
       "toSide": "left",
       "toFloating": false,
       "label": "гарантийный"
     },
     {
-      "id": "eb0e1108b6060175",
+      "id": "8cbf2d210ab4015f",
       "styleAttributes": {},
-      "fromNode": "fe2c3174e409df11",
+      "fromNode": "71e1b138ab978a7b",
       "fromSide": "bottom",
-      "toNode": "eb07e4054158f663",
+      "toNode": "d5e658ce65a3a43c",
       "toSide": "left",
       "toFloating": false,
       "label": "не гарантийный"
     },
     {
-      "id": "f0c15624a3326fe2",
+      "id": "838982892b8dba83",
       "styleAttributes": {},
-      "fromNode": "aa2d510f303ce489",
+      "fromNode": "75449856a55aeb42",
       "fromSide": "bottom",
-      "toNode": "042f56ef92c8a4f6",
+      "toNode": "ebd94724ec1d84c0",
       "toSide": "top",
       "toFloating": false,
       "label": "выдача"
     },
     {
-      "id": "cbe904fe646fdec9",
+      "id": "00de52c32a7b8e52",
       "styleAttributes": {},
-      "fromNode": "042f56ef92c8a4f6",
+      "fromNode": "ebd94724ec1d84c0",
       "fromSide": "right",
-      "toNode": "b47571b5006b2e5f",
+      "toNode": "b14c88e5ce135fef",
       "toSide": "left",
       "toFloating": false
     },
     {
-      "id": "025023eb612ae9b8",
+      "id": "d0d4611d67f7eebb",
       "styleAttributes": {},
-      "fromNode": "b47571b5006b2e5f",
+      "fromNode": "b14c88e5ce135fef",
       "fromSide": "right",
-      "toNode": "03a900d22389114a",
+      "toNode": "f9c90be0743c95ce",
       "toSide": "left",
       "toFloating": false
     },
     {
-      "id": "c05417566590b16f",
+      "id": "4546e66f863b762d",
       "styleAttributes": {},
-      "fromNode": "03a900d22389114a",
+      "fromNode": "f9c90be0743c95ce",
       "fromSide": "right",
-      "toNode": "f6f29308e362f401",
+      "toNode": "37bedf5633c6efcc",
       "toSide": "left",
       "toFloating": false,
       "label": "отремонтирован"
     },
     {
-      "id": "79c2c8d7bd8bab55",
+      "id": "a7f59b006c63e4d1",
       "styleAttributes": {},
-      "fromNode": "03a900d22389114a",
+      "fromNode": "f9c90be0743c95ce",
       "fromSide": "top",
-      "toNode": "da50efd3e262a150",
+      "toNode": "a9dab8ce75087337",
       "toSide": "bottom",
       "toFloating": false,
       "label": "не подлежит"
     },
     {
-      "id": "8e8a8575f8ba0564",
+      "id": "470546deb10b49d1",
       "styleAttributes": {},
-      "fromNode": "da50efd3e262a150",
+      "fromNode": "a9dab8ce75087337",
       "fromSide": "right",
-      "toNode": "f6f29308e362f401",
+      "toNode": "37bedf5633c6efcc",
       "toSide": "top",
       "toFloating": false
     },
     {
-      "id": "51a24ea47fa73930",
+      "id": "69cb9e50156ab970",
       "styleAttributes": {},
-      "fromNode": "f6f29308e362f401",
+      "fromNode": "37bedf5633c6efcc",
       "fromSide": "top",
-      "toNode": "aa2d510f303ce489",
+      "toNode": "75449856a55aeb42",
       "toSide": "right",
       "toFloating": false,
       "label": "возврат в фонд"
     },
     {
-      "id": "a18751428ebb30d6",
+      "id": "37e0c33c6d0092b6",
       "styleAttributes": {},
-      "fromNode": "389a0b28cf41959a",
+      "fromNode": "1542ce4fc20ee5ac",
       "fromSide": "top",
-      "toNode": "eb07e4054158f663",
+      "toNode": "d5e658ce65a3a43c",
       "toSide": "bottom",
       "toFloating": false,
       "label": "выдача"
     },
     {
-      "id": "4cbfe0654629d289",
+      "id": "38b56d16a24daa66",
       "styleAttributes": {},
-      "fromNode": "eb07e4054158f663",
+      "fromNode": "d5e658ce65a3a43c",
       "fromSide": "right",
-      "toNode": "9132d966ca480783",
+      "toNode": "5330c1adbd32ddb0",
       "toSide": "left",
       "toFloating": false
     },
     {
-      "id": "063b9d7f76139701",
+      "id": "6416fa01d3f9281c",
       "styleAttributes": {},
-      "fromNode": "9132d966ca480783",
+      "fromNode": "5330c1adbd32ddb0",
       "fromSide": "right",
-      "toNode": "4ea20bbabfb849b4",
+      "toNode": "0cc731df626dff56",
       "toSide": "left",
       "toFloating": false
     },
     {
-      "id": "12fae128b051f8f5",
+      "id": "a00b09f19471ac93",
       "styleAttributes": {},
-      "fromNode": "4ea20bbabfb849b4",
+      "fromNode": "0cc731df626dff56",
       "fromSide": "right",
-      "toNode": "c85d98b6b2e5581e",
+      "toNode": "ef5cd0cd4b614cea",
       "toSide": "left",
       "toFloating": false,
       "label": "отремонтирован"
     },
     {
-      "id": "814367080cf36f1a",
+      "id": "72666c47a061a797",
       "styleAttributes": {},
-      "fromNode": "4ea20bbabfb849b4",
+      "fromNode": "0cc731df626dff56",
       "fromSide": "bottom",
-      "toNode": "3259f581da956c13",
+      "toNode": "7fae980ff367a65c",
       "toSide": "top",
       "toFloating": false,
       "label": "не подлежит"
     },
     {
-      "id": "66aa83810b95094e",
+      "id": "033b50a06c17c5ab",
       "styleAttributes": {},
-      "fromNode": "3259f581da956c13",
+      "fromNode": "7fae980ff367a65c",
       "fromSide": "right",
-      "toNode": "c85d98b6b2e5581e",
+      "toNode": "ef5cd0cd4b614cea",
       "toSide": "bottom",
       "toFloating": false
     },
     {
-      "id": "7ea5dc5831bb492a",
+      "id": "9288708c60e01b23",
       "styleAttributes": {},
-      "fromNode": "c85d98b6b2e5581e",
+      "fromNode": "ef5cd0cd4b614cea",
       "fromSide": "bottom",
-      "toNode": "389a0b28cf41959a",
+      "toNode": "1542ce4fc20ee5ac",
       "toSide": "right",
       "toFloating": false,
       "label": "возврат в фонд"
     },
     {
-      "id": "3291df883d49421b",
+      "id": "27172e50f969300b",
       "styleAttributes": {},
-      "fromNode": "3259f581da956c13",
+      "fromNode": "7fae980ff367a65c",
       "fromSide": "right",
-      "toNode": "b38ebee6acb2dfdc",
+      "toNode": "dbad40b581c75fdc",
       "toSide": "left",
       "toFloating": false
     }

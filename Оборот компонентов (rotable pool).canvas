@@ -1,0 +1,258 @@
+{
+  "nodes": [
+    {
+      "id": "724e1ea22730d960",
+      "type": "group",
+      "x": -700,
+      "y": -660,
+      "width": 1760,
+      "height": 240,
+      "styleAttributes": {},
+      "label": "ЭКСПЛУАТАЦИЯ · САМОСВАЛ NHL"
+    },
+    {
+      "id": "97b81327556e9bcb",
+      "type": "group",
+      "x": -700,
+      "y": -360,
+      "width": 1760,
+      "height": 220,
+      "styleAttributes": {},
+      "label": "ГАРАНТИЙНЫЙ СЛУЧАЙ → ОБОРОТНЫЙ ФОНД ГЕ (за счёт контрагента)"
+    },
+    {
+      "id": "2daccf9129e21153",
+      "type": "group",
+      "x": -700,
+      "y": 20,
+      "width": 1760,
+      "height": 320,
+      "styleAttributes": {},
+      "label": "НЕ ГАРАНТИЙНЫЙ → ОБОРОТНЫЙ ФОНД ПОЛЮС / ЗИП (за счёт владельца)"
+    },
+    {
+      "id": "2aef0570e3eea646",
+      "type": "text",
+      "x": -40,
+      "y": -600,
+      "width": 320,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "🚛 Компонент в работе на самосвале\n(🟢 исправный, установлен)"
+    },
+    {
+      "id": "ad11daf68f073de2",
+      "type": "text",
+      "x": 360,
+      "y": -590,
+      "width": 220,
+      "height": 90,
+      "styleAttributes": {},
+      "text": "⚠ Отказ компонента",
+      "color": "3"
+    },
+    {
+      "id": "3a84e0b3a11fc015",
+      "type": "text",
+      "x": 700,
+      "y": -600,
+      "width": 300,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "🔴 Снятие\n(неисправный компонент)",
+      "color": "1"
+    },
+    {
+      "id": "12b65bfeca658f93",
+      "type": "text",
+      "x": 780,
+      "y": -430,
+      "width": 260,
+      "height": 110,
+      "styleAttributes": {
+        "shape": "diamond"
+      },
+      "text": "Гарантийный\nслучай?",
+      "color": "3"
+    },
+    {
+      "id": "ff8d54929ae60651",
+      "type": "text",
+      "x": 360,
+      "y": -320,
+      "width": 320,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "🔧 Ремонт по гарантии (ГЕ)\nвосстановление за счёт ГЕ",
+      "color": "4"
+    },
+    {
+      "id": "d04fb78f6f1b234a",
+      "type": "text",
+      "x": -620,
+      "y": -320,
+      "width": 300,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "🟢 ОФ ГЕ\nисправный компонент в фонде ГЕ",
+      "color": "4"
+    },
+    {
+      "id": "4bb0cdc98d8500f9",
+      "type": "text",
+      "x": 360,
+      "y": 60,
+      "width": 320,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "🔧 Коммерческий ремонт\n(оплата Полюс)",
+      "color": "2"
+    },
+    {
+      "id": "ca85f08f24006015",
+      "type": "text",
+      "x": 360,
+      "y": 210,
+      "width": 320,
+      "height": 90,
+      "styleAttributes": {},
+      "text": "Ремонт невозможен →\nзакупка нового компонента",
+      "color": "1"
+    },
+    {
+      "id": "fe396e1f79491e86",
+      "type": "text",
+      "x": -620,
+      "y": 80,
+      "width": 300,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "🟠 ОФ Полюс (ЗИП)\nисправный компонент в фонде владельца",
+      "color": "2"
+    },
+    {
+      "id": "3aad93493726f94c",
+      "type": "text",
+      "x": 760,
+      "y": 150,
+      "width": 640,
+      "height": 190,
+      "styleAttributes": {},
+      "text": "📐 Размер оборотного фонда (методика METRIC / Палма):\nОФ ≈ интенсивность отказов λ × время оборота TAT + страховой запас.\nНорматив: 10 самосвалов на гарантии = 1 комплект\n(NTE: 1 ДВС + 2 мотор-колеса + 1 генератор;  TR100: 1 ДВС + 1 КПП + 2 борт. редуктора)",
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b537a3632a80933b",
+      "styleAttributes": {},
+      "fromNode": "2aef0570e3eea646",
+      "fromSide": "right",
+      "toNode": "ad11daf68f073de2",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "отказ"
+    },
+    {
+      "id": "0816054419cd48ba",
+      "styleAttributes": {},
+      "fromNode": "ad11daf68f073de2",
+      "fromSide": "right",
+      "toNode": "3a84e0b3a11fc015",
+      "toSide": "left",
+      "toFloating": false
+    },
+    {
+      "id": "c67509279d38ec65",
+      "styleAttributes": {},
+      "fromNode": "3a84e0b3a11fc015",
+      "fromSide": "bottom",
+      "toNode": "12b65bfeca658f93",
+      "toSide": "top",
+      "toFloating": false
+    },
+    {
+      "id": "bf05d2e0d4a2cc54",
+      "styleAttributes": {},
+      "fromNode": "12b65bfeca658f93",
+      "fromSide": "left",
+      "toNode": "ff8d54929ae60651",
+      "toSide": "right",
+      "toFloating": false,
+      "label": "гарантийный"
+    },
+    {
+      "id": "6ea60b46090e9ebe",
+      "styleAttributes": {},
+      "fromNode": "12b65bfeca658f93",
+      "fromSide": "bottom",
+      "toNode": "4bb0cdc98d8500f9",
+      "toSide": "right",
+      "toFloating": false,
+      "label": "не гарантийный"
+    },
+    {
+      "id": "be2c7430c3813923",
+      "styleAttributes": {},
+      "fromNode": "ff8d54929ae60651",
+      "fromSide": "right",
+      "toNode": "d04fb78f6f1b234a",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "возврат в ОФ ГЕ · тот же фонд (TAT)"
+    },
+    {
+      "id": "9b6efca2c8027397",
+      "styleAttributes": {},
+      "fromNode": "d04fb78f6f1b234a",
+      "fromSide": "top",
+      "toNode": "2aef0570e3eea646",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "выдача → установка (advance exchange)"
+    },
+    {
+      "id": "a67a3d2c622dc59f",
+      "styleAttributes": {},
+      "fromNode": "4bb0cdc98d8500f9",
+      "fromSide": "right",
+      "toNode": "fe396e1f79491e86",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "возврат в ОФ Полюс (TAT)"
+    },
+    {
+      "id": "f296d4916fbd1c9c",
+      "styleAttributes": {},
+      "fromNode": "4bb0cdc98d8500f9",
+      "fromSide": "bottom",
+      "toNode": "ca85f08f24006015",
+      "toSide": "top",
+      "toFloating": false,
+      "label": "не подлежит"
+    },
+    {
+      "id": "d47aa3ad8643c780",
+      "styleAttributes": {},
+      "fromNode": "ca85f08f24006015",
+      "fromSide": "left",
+      "toNode": "fe396e1f79491e86",
+      "toSide": "bottom",
+      "toFloating": false
+    },
+    {
+      "id": "ab9f7998d4ba56d0",
+      "styleAttributes": {},
+      "fromNode": "fe396e1f79491e86",
+      "fromSide": "top",
+      "toNode": "2aef0570e3eea646",
+      "toSide": "bottom",
+      "toFloating": false,
+      "label": "выдача → установка"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

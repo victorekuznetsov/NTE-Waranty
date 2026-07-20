@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "724e1ea22730d960",
+      "id": "ca53883a0df94543",
       "type": "group",
       "x": -700,
       "y": -660,
@@ -11,7 +11,7 @@
       "label": "ЭКСПЛУАТАЦИЯ · САМОСВАЛ NHL"
     },
     {
-      "id": "97b81327556e9bcb",
+      "id": "a6c62c902ab7746b",
       "type": "group",
       "x": -700,
       "y": -360,
@@ -21,7 +21,7 @@
       "label": "ГАРАНТИЙНЫЙ СЛУЧАЙ → ОБОРОТНЫЙ ФОНД ГЕ (за счёт контрагента)"
     },
     {
-      "id": "2daccf9129e21153",
+      "id": "6c9418890609af4e",
       "type": "group",
       "x": -700,
       "y": 20,
@@ -31,7 +31,7 @@
       "label": "НЕ ГАРАНТИЙНЫЙ → ОБОРОТНЫЙ ФОНД ПОЛЮС / ЗИП (за счёт владельца)"
     },
     {
-      "id": "2aef0570e3eea646",
+      "id": "a038b888fdb9ef0d",
       "type": "text",
       "x": -40,
       "y": -600,
@@ -41,7 +41,7 @@
       "text": "🚛 Компонент в работе на самосвале\n(🟢 исправный, установлен)"
     },
     {
-      "id": "ad11daf68f073de2",
+      "id": "5d78659563f5e1d1",
       "type": "text",
       "x": 360,
       "y": -590,
@@ -52,7 +52,7 @@
       "color": "3"
     },
     {
-      "id": "3a84e0b3a11fc015",
+      "id": "cf43b4fc1f56dc0e",
       "type": "text",
       "x": 700,
       "y": -600,
@@ -63,7 +63,7 @@
       "color": "1"
     },
     {
-      "id": "12b65bfeca658f93",
+      "id": "8c3d59885b2e5975",
       "type": "text",
       "x": 780,
       "y": -430,
@@ -76,18 +76,18 @@
       "color": "3"
     },
     {
-      "id": "ff8d54929ae60651",
+      "id": "d04dd1f6ea8b7d9c",
       "type": "text",
       "x": 360,
       "y": -320,
       "width": 320,
-      "height": 120,
+      "height": 130,
       "styleAttributes": {},
-      "text": "🔧 Ремонт по гарантии (ГЕ)\nвосстановление за счёт ГЕ",
+      "text": "🔧 Ремонт по гарантии (ГЕ)\nвосстановление за счёт ГЕ\n🏭 цех ГЕ",
       "color": "4"
     },
     {
-      "id": "d04fb78f6f1b234a",
+      "id": "ed7417f3c32f522c",
       "type": "text",
       "x": -620,
       "y": -320,
@@ -98,18 +98,18 @@
       "color": "4"
     },
     {
-      "id": "4bb0cdc98d8500f9",
+      "id": "f0583a1de37b9862",
       "type": "text",
       "x": 360,
       "y": 60,
       "width": 320,
-      "height": 110,
+      "height": 120,
       "styleAttributes": {},
-      "text": "🔧 Коммерческий ремонт\n(оплата Полюс)",
+      "text": "🔧 Коммерческий ремонт\n(оплата Полюс)\n🏭 тот же цех ГЕ",
       "color": "2"
     },
     {
-      "id": "ca85f08f24006015",
+      "id": "e054171acf3bfb18",
       "type": "text",
       "x": 360,
       "y": 210,
@@ -120,7 +120,7 @@
       "color": "1"
     },
     {
-      "id": "fe396e1f79491e86",
+      "id": "c916c04fe52ae4f6",
       "type": "text",
       "x": -620,
       "y": 80,
@@ -131,7 +131,18 @@
       "color": "2"
     },
     {
-      "id": "3aad93493726f94c",
+      "id": "90e7185c1fd77a6b",
+      "type": "text",
+      "x": -40,
+      "y": -120,
+      "width": 320,
+      "height": 130,
+      "styleAttributes": {},
+      "text": "🏭 Ремонтный цех ГЕ\nЕдиная ремонтная база: и гарантийный, и коммерческий\nремонт выполняются на одной площадке ГЕ",
+      "color": "5"
+    },
+    {
+      "id": "72d94ca9fe1e7b4a",
       "type": "text",
       "x": 760,
       "y": 150,
@@ -144,108 +155,108 @@
   ],
   "edges": [
     {
-      "id": "b537a3632a80933b",
+      "id": "cd1355a194f5745e",
       "styleAttributes": {},
-      "fromNode": "2aef0570e3eea646",
+      "fromNode": "a038b888fdb9ef0d",
       "fromSide": "right",
-      "toNode": "ad11daf68f073de2",
+      "toNode": "5d78659563f5e1d1",
       "toSide": "left",
       "toFloating": false,
       "label": "отказ"
     },
     {
-      "id": "0816054419cd48ba",
+      "id": "dbd6bdc36649b673",
       "styleAttributes": {},
-      "fromNode": "ad11daf68f073de2",
+      "fromNode": "5d78659563f5e1d1",
       "fromSide": "right",
-      "toNode": "3a84e0b3a11fc015",
+      "toNode": "cf43b4fc1f56dc0e",
       "toSide": "left",
       "toFloating": false
     },
     {
-      "id": "c67509279d38ec65",
+      "id": "8b45bb7758fd3d1c",
       "styleAttributes": {},
-      "fromNode": "3a84e0b3a11fc015",
+      "fromNode": "cf43b4fc1f56dc0e",
       "fromSide": "bottom",
-      "toNode": "12b65bfeca658f93",
+      "toNode": "8c3d59885b2e5975",
       "toSide": "top",
       "toFloating": false
     },
     {
-      "id": "bf05d2e0d4a2cc54",
+      "id": "0d59d3d9b48b4174",
       "styleAttributes": {},
-      "fromNode": "12b65bfeca658f93",
+      "fromNode": "8c3d59885b2e5975",
       "fromSide": "left",
-      "toNode": "ff8d54929ae60651",
+      "toNode": "d04dd1f6ea8b7d9c",
       "toSide": "right",
       "toFloating": false,
       "label": "гарантийный"
     },
     {
-      "id": "6ea60b46090e9ebe",
+      "id": "4ebba3e18a1c1968",
       "styleAttributes": {},
-      "fromNode": "12b65bfeca658f93",
+      "fromNode": "8c3d59885b2e5975",
       "fromSide": "bottom",
-      "toNode": "4bb0cdc98d8500f9",
+      "toNode": "f0583a1de37b9862",
       "toSide": "right",
       "toFloating": false,
       "label": "не гарантийный"
     },
     {
-      "id": "be2c7430c3813923",
+      "id": "417002fc80a8b064",
       "styleAttributes": {},
-      "fromNode": "ff8d54929ae60651",
+      "fromNode": "d04dd1f6ea8b7d9c",
       "fromSide": "right",
-      "toNode": "d04fb78f6f1b234a",
+      "toNode": "ed7417f3c32f522c",
       "toSide": "left",
       "toFloating": false,
       "label": "возврат в ОФ ГЕ · тот же фонд (TAT)"
     },
     {
-      "id": "9b6efca2c8027397",
+      "id": "03e72d2f6c2d4717",
       "styleAttributes": {},
-      "fromNode": "d04fb78f6f1b234a",
+      "fromNode": "ed7417f3c32f522c",
       "fromSide": "top",
-      "toNode": "2aef0570e3eea646",
+      "toNode": "a038b888fdb9ef0d",
       "toSide": "left",
       "toFloating": false,
       "label": "выдача → установка (advance exchange)"
     },
     {
-      "id": "a67a3d2c622dc59f",
+      "id": "b85ede52dd43db13",
       "styleAttributes": {},
-      "fromNode": "4bb0cdc98d8500f9",
+      "fromNode": "f0583a1de37b9862",
       "fromSide": "right",
-      "toNode": "fe396e1f79491e86",
+      "toNode": "c916c04fe52ae4f6",
       "toSide": "left",
       "toFloating": false,
       "label": "возврат в ОФ Полюс (TAT)"
     },
     {
-      "id": "f296d4916fbd1c9c",
+      "id": "64570ef27244bb00",
       "styleAttributes": {},
-      "fromNode": "4bb0cdc98d8500f9",
+      "fromNode": "f0583a1de37b9862",
       "fromSide": "bottom",
-      "toNode": "ca85f08f24006015",
+      "toNode": "e054171acf3bfb18",
       "toSide": "top",
       "toFloating": false,
       "label": "не подлежит"
     },
     {
-      "id": "d47aa3ad8643c780",
+      "id": "7f7638dc3b3ed275",
       "styleAttributes": {},
-      "fromNode": "ca85f08f24006015",
+      "fromNode": "e054171acf3bfb18",
       "fromSide": "left",
-      "toNode": "fe396e1f79491e86",
+      "toNode": "c916c04fe52ae4f6",
       "toSide": "bottom",
       "toFloating": false
     },
     {
-      "id": "ab9f7998d4ba56d0",
+      "id": "70203466f6254cb9",
       "styleAttributes": {},
-      "fromNode": "fe396e1f79491e86",
+      "fromNode": "c916c04fe52ae4f6",
       "fromSide": "top",
-      "toNode": "2aef0570e3eea646",
+      "toNode": "a038b888fdb9ef0d",
       "toSide": "bottom",
       "toFloating": false,
       "label": "выдача → установка"

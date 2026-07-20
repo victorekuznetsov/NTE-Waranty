@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "203d179ad06f6187",
+      "id": "18c31d39ce15d0a4",
       "type": "group",
       "x": -780,
       "y": -760,
@@ -11,17 +11,17 @@
       "label": "ЭКСПЛУАТАЦИЯ · САМОСВАЛ NHL"
     },
     {
-      "id": "8c16b4ee854714d2",
+      "id": "b8c77b13612fab28",
       "type": "group",
       "x": -780,
       "y": -440,
       "width": 2200,
       "height": 260,
       "styleAttributes": {},
-      "label": "ГАРАНТИЙНЫЙ СЛУЧАЙ — выбор фонда"
+      "label": "ГАРАНТИЙНЫЙ СЛУЧАЙ — выбор фонда (ремонт — 🏭 единый цех ГЕ)"
     },
     {
-      "id": "b84ed0688d6c5557",
+      "id": "0c2a2bf460068a9b",
       "type": "group",
       "x": -780,
       "y": -140,
@@ -31,7 +31,7 @@
       "label": "НЕ ГАРАНТИЙНЫЙ СЛУЧАЙ → ОФ ПОЛЮС / ЗИП"
     },
     {
-      "id": "e588f4127183db75",
+      "id": "907f9766d0bafd37",
       "type": "group",
       "x": -780,
       "y": 180,
@@ -41,7 +41,7 @@
       "label": "⚠ ЗОНА ИСКЛЮЧЕНИЯ (КОЛЛИЗИЯ): ЗИП НЕДОСТУПЕН → ЗАИМСТВОВАНИЕ ИЗ ФОНДА 3"
     },
     {
-      "id": "cf66cf7fe394392c",
+      "id": "f345801d27dd003d",
       "type": "text",
       "x": -700,
       "y": -700,
@@ -51,7 +51,7 @@
       "text": "🚛 Компонент в работе на самосвале\n(🟢 исправный, установлен)"
     },
     {
-      "id": "267b1dc103d8148d",
+      "id": "6610c647c35e6490",
       "type": "text",
       "x": -280,
       "y": -690,
@@ -62,7 +62,7 @@
       "color": "3"
     },
     {
-      "id": "a36ca10260224753",
+      "id": "e6f7b90f27cc76e4",
       "type": "text",
       "x": -20,
       "y": -700,
@@ -73,7 +73,7 @@
       "color": "1"
     },
     {
-      "id": "f04319ad1c8a94ff",
+      "id": "24f3f6dc48943b38",
       "type": "text",
       "x": 380,
       "y": -560,
@@ -86,7 +86,7 @@
       "color": "3"
     },
     {
-      "id": "3ea86c190a21e814",
+      "id": "5ed1a3c637d37e93",
       "type": "text",
       "x": -620,
       "y": -400,
@@ -99,29 +99,29 @@
       "color": "6"
     },
     {
-      "id": "1cb00dda2eecfbda",
+      "id": "d15bf04982fe0fb7",
       "type": "text",
       "x": -140,
       "y": -400,
       "width": 320,
-      "height": 110,
+      "height": 120,
       "styleAttributes": {},
-      "text": "🔧 Ремонт по гарантии (ГЕ)\nза счёт ГЕ",
+      "text": "🔧 Ремонт по гарантии (ГЕ)\nза счёт ГЕ · 🏭 цех ГЕ",
       "color": "4"
     },
     {
-      "id": "750bdad68d00c1fe",
+      "id": "45daa54c7e80fff6",
       "type": "text",
       "x": 280,
       "y": -400,
       "width": 320,
-      "height": 120,
+      "height": 130,
       "styleAttributes": {},
-      "text": "🔧 Ремонт по гарантии\nв рамках машинокомплекта\n(закреплённый парк)",
+      "text": "🔧 Ремонт по гарантии\nв рамках машинокомплекта\n(закреплённый парк) · 🏭 цех ГЕ",
       "color": "6"
     },
     {
-      "id": "6ed95c9c6f93bc97",
+      "id": "c459132bcf172a5d",
       "type": "text",
       "x": -1360,
       "y": -400,
@@ -132,7 +132,7 @@
       "color": "4"
     },
     {
-      "id": "6d643625e46d2c95",
+      "id": "4599ceb65b5a6d71",
       "type": "text",
       "x": -1360,
       "y": -180,
@@ -143,7 +143,7 @@
       "color": "6"
     },
     {
-      "id": "70f97a28f17a642d",
+      "id": "762888e2899ee1c8",
       "type": "text",
       "x": 380,
       "y": -40,
@@ -156,18 +156,18 @@
       "color": "2"
     },
     {
-      "id": "1009d6f97be26d75",
+      "id": "e07880bcafd1c525",
       "type": "text",
       "x": 700,
       "y": -40,
       "width": 320,
-      "height": 110,
+      "height": 120,
       "styleAttributes": {},
-      "text": "🔧 Коммерческий ремонт\n(оплата Полюс)",
+      "text": "🔧 Коммерческий ремонт\n(оплата Полюс) · 🏭 тот же цех ГЕ",
       "color": "2"
     },
     {
-      "id": "10e7630168436c61",
+      "id": "88bc01025672261a",
       "type": "text",
       "x": -1360,
       "y": -60,
@@ -178,7 +178,7 @@
       "color": "2"
     },
     {
-      "id": "d2ba278d01b5e441",
+      "id": "919742f6fb2a4870",
       "type": "text",
       "x": -620,
       "y": 300,
@@ -191,7 +191,7 @@
       "color": "1"
     },
     {
-      "id": "76a768141c7782d1",
+      "id": "c84e2aa9ebb31c55",
       "type": "text",
       "x": -1360,
       "y": 300,
@@ -202,7 +202,7 @@
       "color": "1"
     },
     {
-      "id": "8a949bdf4910525c",
+      "id": "a4be5a1d380e846a",
       "type": "text",
       "x": -140,
       "y": 270,
@@ -213,18 +213,18 @@
       "color": "6"
     },
     {
-      "id": "2a7b240478008fa2",
+      "id": "dd0797e0a2f16f40",
       "type": "text",
       "x": 280,
       "y": 270,
       "width": 320,
       "height": 110,
       "styleAttributes": {},
-      "text": "Ремонт/закупка компонента\nоплата Полюс (коммерция)",
+      "text": "Ремонт/закупка компонента\n(тот же цех ГЕ) · оплата Полюс",
       "color": "2"
     },
     {
-      "id": "dbc5373102d51e9f",
+      "id": "57835271a33293c8",
       "type": "text",
       "x": 700,
       "y": 270,
@@ -235,7 +235,7 @@
       "color": "1"
     },
     {
-      "id": "24a63b9be18f7cc6",
+      "id": "e18c6b8089973087",
       "type": "text",
       "x": -980,
       "y": -180,
@@ -246,7 +246,7 @@
       "color": "5"
     },
     {
-      "id": "d4ad3e20e67b6692",
+      "id": "03b71db3a4152bc9",
       "type": "text",
       "x": 700,
       "y": 450,
@@ -259,197 +259,197 @@
   ],
   "edges": [
     {
-      "id": "12ef545aac2f7ef9",
+      "id": "e55b78a96d260d47",
       "styleAttributes": {},
-      "fromNode": "cf66cf7fe394392c",
+      "fromNode": "f345801d27dd003d",
       "fromSide": "right",
-      "toNode": "267b1dc103d8148d",
+      "toNode": "6610c647c35e6490",
       "toSide": "left",
       "toFloating": false,
       "label": "отказ"
     },
     {
-      "id": "dd8db6e789bf7ffa",
+      "id": "3264e62f0d4aa0ab",
       "styleAttributes": {},
-      "fromNode": "267b1dc103d8148d",
+      "fromNode": "6610c647c35e6490",
       "fromSide": "right",
-      "toNode": "a36ca10260224753",
+      "toNode": "e6f7b90f27cc76e4",
       "toSide": "left",
       "toFloating": false
     },
     {
-      "id": "b4aa729159bda6d5",
+      "id": "f9401ce8ffaabaf4",
       "styleAttributes": {},
-      "fromNode": "a36ca10260224753",
+      "fromNode": "e6f7b90f27cc76e4",
       "fromSide": "right",
-      "toNode": "f04319ad1c8a94ff",
+      "toNode": "24f3f6dc48943b38",
       "toSide": "left",
       "toFloating": false
     },
     {
-      "id": "259eda7b306e6f81",
+      "id": "5bba4ae29e2b8150",
       "styleAttributes": {},
-      "fromNode": "f04319ad1c8a94ff",
+      "fromNode": "24f3f6dc48943b38",
       "fromSide": "bottom",
-      "toNode": "3ea86c190a21e814",
+      "toNode": "5ed1a3c637d37e93",
       "toSide": "top",
       "toFloating": false,
       "label": "да, гарантийный"
     },
     {
-      "id": "557eb255abbb8823",
+      "id": "5e93d1c4217c4815",
       "styleAttributes": {},
-      "fromNode": "f04319ad1c8a94ff",
+      "fromNode": "24f3f6dc48943b38",
       "fromSide": "bottom",
-      "toNode": "70f97a28f17a642d",
+      "toNode": "762888e2899ee1c8",
       "toSide": "top",
       "toFloating": false,
       "label": "нет, не гарантийный"
     },
     {
-      "id": "100427ed76fbfed5",
+      "id": "9aa4aa7d8815d4cc",
       "styleAttributes": {},
-      "fromNode": "3ea86c190a21e814",
+      "fromNode": "5ed1a3c637d37e93",
       "fromSide": "right",
-      "toNode": "750bdad68d00c1fe",
+      "toNode": "45daa54c7e80fff6",
       "toSide": "left",
       "toFloating": false,
       "label": "да"
     },
     {
-      "id": "12c8d04268d42730",
+      "id": "ab9d5e38a9985211",
       "styleAttributes": {},
-      "fromNode": "3ea86c190a21e814",
+      "fromNode": "5ed1a3c637d37e93",
       "fromSide": "left",
-      "toNode": "1cb00dda2eecfbda",
+      "toNode": "d15bf04982fe0fb7",
       "toSide": "top",
       "toFloating": false,
       "label": "нет / пусто"
     },
     {
-      "id": "ac58366e174b1fcb",
+      "id": "ec83981aecac1c1b",
       "styleAttributes": {},
-      "fromNode": "750bdad68d00c1fe",
+      "fromNode": "45daa54c7e80fff6",
       "fromSide": "bottom",
-      "toNode": "6d643625e46d2c95",
+      "toNode": "4599ceb65b5a6d71",
       "toSide": "top",
       "toFloating": false,
       "label": "возврат в Фонд 3 (TAT)"
     },
     {
-      "id": "118c3c3563707b94",
+      "id": "22d34b845356eb97",
       "styleAttributes": {},
-      "fromNode": "1cb00dda2eecfbda",
+      "fromNode": "d15bf04982fe0fb7",
       "fromSide": "right",
-      "toNode": "6ed95c9c6f93bc97",
+      "toNode": "c459132bcf172a5d",
       "toSide": "left",
       "toFloating": false,
       "label": "возврат в ОФ ГЕ (TAT)"
     },
     {
-      "id": "499c0a60a322169c",
+      "id": "ee1af7dd8a5157d9",
       "styleAttributes": {},
-      "fromNode": "6ed95c9c6f93bc97",
+      "fromNode": "c459132bcf172a5d",
       "fromSide": "top",
-      "toNode": "cf66cf7fe394392c",
+      "toNode": "f345801d27dd003d",
       "toSide": "left",
       "toFloating": false,
       "label": "выдача → установка"
     },
     {
-      "id": "57eab2b2a6eb696e",
+      "id": "827666c0b92719b2",
       "styleAttributes": {},
-      "fromNode": "6d643625e46d2c95",
+      "fromNode": "4599ceb65b5a6d71",
       "fromSide": "top",
-      "toNode": "cf66cf7fe394392c",
+      "toNode": "f345801d27dd003d",
       "toSide": "bottom",
       "toFloating": false,
       "label": "выдача → установка (только своя машина)"
     },
     {
-      "id": "8e5584313ad3a0b5",
+      "id": "5b85cf4af326b10d",
       "styleAttributes": {},
-      "fromNode": "70f97a28f17a642d",
+      "fromNode": "762888e2899ee1c8",
       "fromSide": "right",
-      "toNode": "1009d6f97be26d75",
+      "toNode": "e07880bcafd1c525",
       "toSide": "left",
       "toFloating": false,
       "label": "да, доступен"
     },
     {
-      "id": "95be7b18cc0b3a2d",
+      "id": "f6c47b6ed9583d29",
       "styleAttributes": {},
-      "fromNode": "1009d6f97be26d75",
+      "fromNode": "e07880bcafd1c525",
       "fromSide": "bottom",
-      "toNode": "10e7630168436c61",
+      "toNode": "88bc01025672261a",
       "toSide": "top",
       "toFloating": false,
       "label": "возврат в ОФ Полюс (TAT)"
     },
     {
-      "id": "8f85b338e2be74fc",
+      "id": "5a0a964e96254ced",
       "styleAttributes": {},
-      "fromNode": "10e7630168436c61",
+      "fromNode": "88bc01025672261a",
       "fromSide": "top",
-      "toNode": "cf66cf7fe394392c",
+      "toNode": "f345801d27dd003d",
       "toSide": "left",
       "toFloating": false,
       "label": "выдача → установка"
     },
     {
-      "id": "a8081898f1ac6a38",
+      "id": "fe924535e98e53f9",
       "styleAttributes": {},
-      "fromNode": "70f97a28f17a642d",
+      "fromNode": "762888e2899ee1c8",
       "fromSide": "bottom",
-      "toNode": "d2ba278d01b5e441",
+      "toNode": "919742f6fb2a4870",
       "toSide": "top",
       "toFloating": false,
       "label": "нет → коллизия"
     },
     {
-      "id": "a42c79daf2ab50d7",
+      "id": "4f0589599c39ea74",
       "styleAttributes": {},
-      "fromNode": "d2ba278d01b5e441",
+      "fromNode": "919742f6fb2a4870",
       "fromSide": "right",
-      "toNode": "76a768141c7782d1",
+      "toNode": "c84e2aa9ebb31c55",
       "toSide": "left",
       "toFloating": false,
       "label": "нет"
     },
     {
-      "id": "9986a9beeb15b970",
+      "id": "04047879a14829ad",
       "styleAttributes": {},
-      "fromNode": "d2ba278d01b5e441",
+      "fromNode": "919742f6fb2a4870",
       "fromSide": "bottom",
-      "toNode": "8a949bdf4910525c",
+      "toNode": "a4be5a1d380e846a",
       "toSide": "left",
       "toFloating": false,
       "label": "да, одобрено"
     },
     {
-      "id": "c355118697b69324",
+      "id": "93808fc4eb63482b",
       "styleAttributes": {},
-      "fromNode": "8a949bdf4910525c",
+      "fromNode": "a4be5a1d380e846a",
       "fromSide": "right",
-      "toNode": "2a7b240478008fa2",
+      "toNode": "dd0797e0a2f16f40",
       "toSide": "left",
       "toFloating": false
     },
     {
-      "id": "f573ffd44e5e0760",
+      "id": "515fce8bb0cce807",
       "styleAttributes": {},
-      "fromNode": "2a7b240478008fa2",
+      "fromNode": "dd0797e0a2f16f40",
       "fromSide": "right",
-      "toNode": "dbc5373102d51e9f",
+      "toNode": "57835271a33293c8",
       "toSide": "left",
       "toFloating": false
     },
     {
-      "id": "1cd065c5318fa1b4",
+      "id": "78006799f9c0e090",
       "styleAttributes": {},
-      "fromNode": "dbc5373102d51e9f",
+      "fromNode": "57835271a33293c8",
       "fromSide": "top",
-      "toNode": "6d643625e46d2c95",
+      "toNode": "4599ceb65b5a6d71",
       "toSide": "right",
       "toFloating": false,
       "label": "ОБЯЗАТЕЛЬНОЕ погашение долга Фонда 3"

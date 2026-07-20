@@ -1,0 +1,462 @@
+{
+  "nodes": [
+    {
+      "id": "203d179ad06f6187",
+      "type": "group",
+      "x": -780,
+      "y": -760,
+      "width": 2200,
+      "height": 260,
+      "styleAttributes": {},
+      "label": "ЭКСПЛУАТАЦИЯ · САМОСВАЛ NHL"
+    },
+    {
+      "id": "8c16b4ee854714d2",
+      "type": "group",
+      "x": -780,
+      "y": -440,
+      "width": 2200,
+      "height": 260,
+      "styleAttributes": {},
+      "label": "ГАРАНТИЙНЫЙ СЛУЧАЙ — выбор фонда"
+    },
+    {
+      "id": "b84ed0688d6c5557",
+      "type": "group",
+      "x": -780,
+      "y": -140,
+      "width": 2200,
+      "height": 260,
+      "styleAttributes": {},
+      "label": "НЕ ГАРАНТИЙНЫЙ СЛУЧАЙ → ОФ ПОЛЮС / ЗИП"
+    },
+    {
+      "id": "e588f4127183db75",
+      "type": "group",
+      "x": -780,
+      "y": 180,
+      "width": 2200,
+      "height": 420,
+      "styleAttributes": {},
+      "label": "⚠ ЗОНА ИСКЛЮЧЕНИЯ (КОЛЛИЗИЯ): ЗИП НЕДОСТУПЕН → ЗАИМСТВОВАНИЕ ИЗ ФОНДА 3"
+    },
+    {
+      "id": "cf66cf7fe394392c",
+      "type": "text",
+      "x": -700,
+      "y": -700,
+      "width": 340,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "🚛 Компонент в работе на самосвале\n(🟢 исправный, установлен)"
+    },
+    {
+      "id": "267b1dc103d8148d",
+      "type": "text",
+      "x": -280,
+      "y": -690,
+      "width": 220,
+      "height": 90,
+      "styleAttributes": {},
+      "text": "⚠ Отказ компонента",
+      "color": "3"
+    },
+    {
+      "id": "a36ca10260224753",
+      "type": "text",
+      "x": -20,
+      "y": -700,
+      "width": 300,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "🔴 Снятие\n(неисправный компонент)",
+      "color": "1"
+    },
+    {
+      "id": "f04319ad1c8a94ff",
+      "type": "text",
+      "x": 380,
+      "y": -560,
+      "width": 260,
+      "height": 120,
+      "styleAttributes": {
+        "shape": "diamond"
+      },
+      "text": "Гарантийный\nслучай?",
+      "color": "3"
+    },
+    {
+      "id": "3ea86c190a21e814",
+      "type": "text",
+      "x": -620,
+      "y": -400,
+      "width": 420,
+      "height": 140,
+      "styleAttributes": {
+        "shape": "diamond"
+      },
+      "text": "Машина из закреплённого парка\n(машинокомплект) И есть в наличии\nв Фонде 3?",
+      "color": "6"
+    },
+    {
+      "id": "1cb00dda2eecfbda",
+      "type": "text",
+      "x": -140,
+      "y": -400,
+      "width": 320,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "🔧 Ремонт по гарантии (ГЕ)\nза счёт ГЕ",
+      "color": "4"
+    },
+    {
+      "id": "750bdad68d00c1fe",
+      "type": "text",
+      "x": 280,
+      "y": -400,
+      "width": 320,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "🔧 Ремонт по гарантии\nв рамках машинокомплекта\n(закреплённый парк)",
+      "color": "6"
+    },
+    {
+      "id": "6ed95c9c6f93bc97",
+      "type": "text",
+      "x": -1360,
+      "y": -400,
+      "width": 320,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "🟢 ОФ ГЕ\nобщий гарантийный фонд, все машины парка",
+      "color": "4"
+    },
+    {
+      "id": "6d643625e46d2c95",
+      "type": "text",
+      "x": -1360,
+      "y": -180,
+      "width": 340,
+      "height": 140,
+      "styleAttributes": {},
+      "text": "🔵 ОФ Клиента — целевой (Фонд 3)\nтолько закреплённый парк · только гарантия\nсобственность клиента, поставлен с машинами",
+      "color": "6"
+    },
+    {
+      "id": "70f97a28f17a642d",
+      "type": "text",
+      "x": 380,
+      "y": -40,
+      "width": 260,
+      "height": 120,
+      "styleAttributes": {
+        "shape": "diamond"
+      },
+      "text": "ОФ Полюс (ЗИП)\nдоступен?",
+      "color": "2"
+    },
+    {
+      "id": "1009d6f97be26d75",
+      "type": "text",
+      "x": 700,
+      "y": -40,
+      "width": 320,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "🔧 Коммерческий ремонт\n(оплата Полюс)",
+      "color": "2"
+    },
+    {
+      "id": "10e7630168436c61",
+      "type": "text",
+      "x": -1360,
+      "y": -60,
+      "width": 320,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "🟠 ОФ Полюс (ЗИП)\nобщий фонд владельца · любые случаи",
+      "color": "2"
+    },
+    {
+      "id": "d2ba278d01b5e441",
+      "type": "text",
+      "x": -620,
+      "y": 300,
+      "width": 300,
+      "height": 140,
+      "styleAttributes": {
+        "shape": "diamond"
+      },
+      "text": "Одобрение\nзаимствования\nиз Фонда 3?",
+      "color": "1"
+    },
+    {
+      "id": "76a768141c7782d1",
+      "type": "text",
+      "x": -1360,
+      "y": 300,
+      "width": 320,
+      "height": 120,
+      "styleAttributes": {},
+      "text": "❌ Отказ в исключении →\nпоиск альтернативы\n(срочная закупка / аренда вне ОФ)",
+      "color": "1"
+    },
+    {
+      "id": "8a949bdf4910525c",
+      "type": "text",
+      "x": -140,
+      "y": 270,
+      "width": 320,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "⚠ Заимствование единицы\nиз Фонда 3 (исключение)",
+      "color": "6"
+    },
+    {
+      "id": "2a7b240478008fa2",
+      "type": "text",
+      "x": 280,
+      "y": 270,
+      "width": 320,
+      "height": 110,
+      "styleAttributes": {},
+      "text": "Ремонт/закупка компонента\nоплата Полюс (коммерция)",
+      "color": "2"
+    },
+    {
+      "id": "dbc5373102d51e9f",
+      "type": "text",
+      "x": 700,
+      "y": 270,
+      "width": 340,
+      "height": 130,
+      "styleAttributes": {},
+      "text": "🔁 Погашение долга ОБЯЗАТЕЛЬНО\nвосстановленный/новый компонент\nвозврат именно в Фонд 3 (не в ЗИП!)",
+      "color": "1"
+    },
+    {
+      "id": "24a63b9be18f7cc6",
+      "type": "text",
+      "x": -980,
+      "y": -180,
+      "width": 340,
+      "height": 140,
+      "styleAttributes": {},
+      "text": "📒 Реестр Фонда 3\nНорматив (по закреплённому парку) · Факт на складе ·\nДолг (заимствовано, ожидает погашения)",
+      "color": "5"
+    },
+    {
+      "id": "d4ad3e20e67b6692",
+      "type": "text",
+      "x": 700,
+      "y": 450,
+      "width": 420,
+      "height": 150,
+      "styleAttributes": {},
+      "text": "📐 Размер и учёт фондов:\nОФ ГЕ / ОФ Полюс — норматив 10 машин = 1 комплект (λ×TAT).\nФонд 3 — норматив по контракту поставки (закреплённые машины).\nПри коллизии — обязателен учёт долга до полного погашения.",
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "12ef545aac2f7ef9",
+      "styleAttributes": {},
+      "fromNode": "cf66cf7fe394392c",
+      "fromSide": "right",
+      "toNode": "267b1dc103d8148d",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "отказ"
+    },
+    {
+      "id": "dd8db6e789bf7ffa",
+      "styleAttributes": {},
+      "fromNode": "267b1dc103d8148d",
+      "fromSide": "right",
+      "toNode": "a36ca10260224753",
+      "toSide": "left",
+      "toFloating": false
+    },
+    {
+      "id": "b4aa729159bda6d5",
+      "styleAttributes": {},
+      "fromNode": "a36ca10260224753",
+      "fromSide": "right",
+      "toNode": "f04319ad1c8a94ff",
+      "toSide": "left",
+      "toFloating": false
+    },
+    {
+      "id": "259eda7b306e6f81",
+      "styleAttributes": {},
+      "fromNode": "f04319ad1c8a94ff",
+      "fromSide": "bottom",
+      "toNode": "3ea86c190a21e814",
+      "toSide": "top",
+      "toFloating": false,
+      "label": "да, гарантийный"
+    },
+    {
+      "id": "557eb255abbb8823",
+      "styleAttributes": {},
+      "fromNode": "f04319ad1c8a94ff",
+      "fromSide": "bottom",
+      "toNode": "70f97a28f17a642d",
+      "toSide": "top",
+      "toFloating": false,
+      "label": "нет, не гарантийный"
+    },
+    {
+      "id": "100427ed76fbfed5",
+      "styleAttributes": {},
+      "fromNode": "3ea86c190a21e814",
+      "fromSide": "right",
+      "toNode": "750bdad68d00c1fe",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "да"
+    },
+    {
+      "id": "12c8d04268d42730",
+      "styleAttributes": {},
+      "fromNode": "3ea86c190a21e814",
+      "fromSide": "left",
+      "toNode": "1cb00dda2eecfbda",
+      "toSide": "top",
+      "toFloating": false,
+      "label": "нет / пусто"
+    },
+    {
+      "id": "ac58366e174b1fcb",
+      "styleAttributes": {},
+      "fromNode": "750bdad68d00c1fe",
+      "fromSide": "bottom",
+      "toNode": "6d643625e46d2c95",
+      "toSide": "top",
+      "toFloating": false,
+      "label": "возврат в Фонд 3 (TAT)"
+    },
+    {
+      "id": "118c3c3563707b94",
+      "styleAttributes": {},
+      "fromNode": "1cb00dda2eecfbda",
+      "fromSide": "right",
+      "toNode": "6ed95c9c6f93bc97",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "возврат в ОФ ГЕ (TAT)"
+    },
+    {
+      "id": "499c0a60a322169c",
+      "styleAttributes": {},
+      "fromNode": "6ed95c9c6f93bc97",
+      "fromSide": "top",
+      "toNode": "cf66cf7fe394392c",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "выдача → установка"
+    },
+    {
+      "id": "57eab2b2a6eb696e",
+      "styleAttributes": {},
+      "fromNode": "6d643625e46d2c95",
+      "fromSide": "top",
+      "toNode": "cf66cf7fe394392c",
+      "toSide": "bottom",
+      "toFloating": false,
+      "label": "выдача → установка (только своя машина)"
+    },
+    {
+      "id": "8e5584313ad3a0b5",
+      "styleAttributes": {},
+      "fromNode": "70f97a28f17a642d",
+      "fromSide": "right",
+      "toNode": "1009d6f97be26d75",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "да, доступен"
+    },
+    {
+      "id": "95be7b18cc0b3a2d",
+      "styleAttributes": {},
+      "fromNode": "1009d6f97be26d75",
+      "fromSide": "bottom",
+      "toNode": "10e7630168436c61",
+      "toSide": "top",
+      "toFloating": false,
+      "label": "возврат в ОФ Полюс (TAT)"
+    },
+    {
+      "id": "8f85b338e2be74fc",
+      "styleAttributes": {},
+      "fromNode": "10e7630168436c61",
+      "fromSide": "top",
+      "toNode": "cf66cf7fe394392c",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "выдача → установка"
+    },
+    {
+      "id": "a8081898f1ac6a38",
+      "styleAttributes": {},
+      "fromNode": "70f97a28f17a642d",
+      "fromSide": "bottom",
+      "toNode": "d2ba278d01b5e441",
+      "toSide": "top",
+      "toFloating": false,
+      "label": "нет → коллизия"
+    },
+    {
+      "id": "a42c79daf2ab50d7",
+      "styleAttributes": {},
+      "fromNode": "d2ba278d01b5e441",
+      "fromSide": "right",
+      "toNode": "76a768141c7782d1",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "нет"
+    },
+    {
+      "id": "9986a9beeb15b970",
+      "styleAttributes": {},
+      "fromNode": "d2ba278d01b5e441",
+      "fromSide": "bottom",
+      "toNode": "8a949bdf4910525c",
+      "toSide": "left",
+      "toFloating": false,
+      "label": "да, одобрено"
+    },
+    {
+      "id": "c355118697b69324",
+      "styleAttributes": {},
+      "fromNode": "8a949bdf4910525c",
+      "fromSide": "right",
+      "toNode": "2a7b240478008fa2",
+      "toSide": "left",
+      "toFloating": false
+    },
+    {
+      "id": "f573ffd44e5e0760",
+      "styleAttributes": {},
+      "fromNode": "2a7b240478008fa2",
+      "fromSide": "right",
+      "toNode": "dbc5373102d51e9f",
+      "toSide": "left",
+      "toFloating": false
+    },
+    {
+      "id": "1cd065c5318fa1b4",
+      "styleAttributes": {},
+      "fromNode": "dbc5373102d51e9f",
+      "fromSide": "top",
+      "toNode": "6d643625e46d2c95",
+      "toSide": "right",
+      "toFloating": false,
+      "label": "ОБЯЗАТЕЛЬНОЕ погашение долга Фонда 3"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}
